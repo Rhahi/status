@@ -11,3 +11,4 @@ jq -n \
     --arg s "$sys" \
     '{date: $d, temp: $t, system: $s}' \
     > ./data/data.json
+hugo
