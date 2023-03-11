@@ -1,0 +1,60 @@
+html {
+    font-family: monospace, monospace;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+    background-color: rgb(100, 100, 100);
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1, h2 {
+    display: inline-block;
+    padding: 0.1em;
+    border: 0.1em solid black;
+    color: black;
+    text-shadow: none;
+}
+
+h1 {
+    font-size: 2em;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: cyan;
+    }
+}
+
+main {
+    text-align: right;
+    margin-right: 1em;
+    font-size: 1.3rem;
+
+    .data {
+        text-align: left;
+        margin-left: auto;
+        display: block;
+        font-size: 1.2rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 33em;
+        padding: 1em;
+        overflow: hidden;
+    }
+}

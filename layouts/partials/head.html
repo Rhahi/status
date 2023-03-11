@@ -1,0 +1,8 @@
+{{ $sass := resources.Get "sass/style.scss" }}
+{{ $style := $sass | resources.ToCSS | fingerprint }}
+{{ $js := resources.Get "js/bg.js" }}
+{{ $sjs := $js | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+<script src="{{ $sjs.Permalink }}" integrity="{{ $sjs.Data.Integrity }}"></script>
+<noscript><style>body {background-image: url("/images/14.jpg")}</style></noscript>
+<title>{{.Site.Title}}</title>

@@ -1,0 +1,12 @@
+# common settings
+languageCode = 'en-us'
+description = 'If this page is down, the server is offline.'
+disableKinds = ['taxonomy', 'term', 'page', 'section']
+
+# variable settings
+baseURL = 'http://localhost'
+title = 'MyServer | Status'
+
+[params]
+name = 'MyServer'
+github = ''

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>{{ partial "head.html" . }}</head>
+    <body id="#body">
+        <main>
+            <a href="{{.Site.Params.Github}}">(GitHub)</a> <h1>{{.Site.Params.Name}} is online</h1>
+
+            <p class="updated">Last update: {{.Site.Data.data.date}}</p>
+            <h2>Temperature</h2>
+            <code class="data sensor">
+                {{ $sensor := .Site.Data.data.temp}}
+                {{ replace $sensor "\n" "<br />" | safeHTML }}
+            </code>
+            <h2>System</h2>
+            <code class="data system">
+                {{ $system := .Site.Data.data.system}}
+                {{ replace $system "\n" "<br />" | safeHTML }}
+            </code>
+        </main>
+    </body>
+</html>
