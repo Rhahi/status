@@ -15,3 +15,8 @@ Probably not a good way to have a status page, but here it is!
 1. probably change update.sh to fit with system settings
 1. set up cronjob to run update.sh at desired interval
 1. serve
+
+## example cron config
+> 0 * * * * cd /home/user/web && /home/user/web/update.sh && /home/user/go/bin/hugo
+
+check `mail` to see errors if it occurs.
